@@ -1,10 +1,13 @@
+const CityController = require('./City');
+const MovieController = require('./Movie');
+
+
 exports.init = (expressApp) => {
-    expressApp.get('/Otro', (req, res) => {
-        // const jose = new Persona();
-        // jose.name = 'Jose';
-        // jose.save();
-      
-        res.send("Otro");
-      });
+  expressApp.get('/Otro', (req, res) => {
+    res.send("Otro");
+  });
+
+  CityController.init(expressApp);
+  MovieController.init(expressApp);
 
 }

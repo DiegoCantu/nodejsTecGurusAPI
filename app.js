@@ -6,7 +6,7 @@ const Controllers = require('./src/Controllers');
 
 
 config.init();
-
+app.use(bodyParser.json())
 Controllers.init(app);
 
 // const mongoose = require('mongoose');
