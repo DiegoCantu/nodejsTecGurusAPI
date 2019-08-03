@@ -18,7 +18,7 @@
     "mongoose": "^5.6.5"
   },
   "scripts": {
-    "start": "nodemon app.js localhost 3000"
+    "start": "node app.js"
   },
   "engines": {
     "node" : "8.11.4"
