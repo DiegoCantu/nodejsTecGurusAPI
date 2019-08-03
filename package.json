@@ -19,5 +19,8 @@
   },
   "scripts": {
     "start": "nodemon app.js localhost 3000"
+  },
+  "engines": {
+    "node" : "8.11.4"
   }
 }

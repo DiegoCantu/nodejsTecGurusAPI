@@ -3,8 +3,8 @@ const MovieController = require('./Movie');
 const UserController = require('./User');
 
 exports.init = (expressApp) => {
-  expressApp.get('/Otro', (req, res) => {
-    res.send('Otro');
+  expressApp.get('/', (req, res) => {
+    res.send('Hello Heroku!');
   });
 
   CityController.init(expressApp);
